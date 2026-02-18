@@ -8,11 +8,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
+
 body{
 margin:0;
 background:#0f0f0f;
 color:#eaeaea;
 font-family:'Inter',sans-serif;
+overflow-x:hidden;
 }
 
 nav{
@@ -21,16 +23,32 @@ width:100%;
 padding:25px 8%;
 display:flex;
 justify-content:space-between;
+align-items:center;
 background:rgba(0,0,0,.6);
 backdrop-filter:blur(8px);
+box-sizing:border-box;
 }
 
-nav a{
+.logo{
+letter-spacing:2px;
+}
+
+.nav-links{
+display:flex;
+align-items:center;
+}
+
+.nav-links a{
 color:#eaeaea;
 text-decoration:none;
-margin-left:25px;
+margin-left:30px;
 font-size:12px;
 letter-spacing:2px;
+transition:.3s;
+}
+
+.nav-links a:hover{
+opacity:.6;
 }
 
 header{
@@ -40,6 +58,7 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
+padding:0 20px;
 }
 
 h1{
@@ -55,17 +74,45 @@ font-size:13px;
 letter-spacing:3px;
 opacity:.6;
 }
+
+/* ✅ MOBİL DÜZELTME */
+
+@media(max-width:768px){
+
+nav{
+padding:20px 5%;
+}
+
+.nav-links a{
+margin-left:15px;
+font-size:10px;
+letter-spacing:1px;
+}
+
+h1{
+font-size:34px;
+letter-spacing:2px;
+}
+
+.subtitle{
+font-size:10px;
+letter-spacing:2px;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
 <nav>
-<div>HK</div>
-<div>
-<a href="collection.html">COLLECTION</a>
-<a href="mailto:hamdullahkaratas406@gmail.com">CONTACT</a>
-<a href="https://instagram.com/hamdlhkaratas" target="_blank">INSTAGRAM</a>
+<div class="logo">HK</div>
+
+<div class="nav-links">
+<a href="collection.html">WORK</a>
+<a href="mailto:hamdullahkaratas406@gmail.com">MAIL</a>
+<a href="https://instagram.com/hamdlhkaratas" target="_blank">IG</a>
 </div>
 </nav>
 
