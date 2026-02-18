@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head> <style>
+.gallery img {
+  display: block;          /* Alt alta sıralar */
+  margin: 20px auto;       /* Üst-alt boşluk, ortalanma */
+  max-width: 90%;          /* Telefon ve masaüstü uyumlu */
+  height: auto;            /* Oran bozulmasın */
+  border-radius: 10px;     /* Hafif premium köşe yuvarlama */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Hafif gölge efekti */
+  transition: transform 0.3s ease; /* Hover animasyonu için */
+}
+
+.gallery img:hover {
+  transform: scale(1.03); /* Hover hafif büyüme efekti */
+}
+</style>
 <meta charset="UTF-8">
 <title>Sculpture | Hamdullah Karataş</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300&display=swap" rel="stylesheet">
@@ -28,4 +42,8 @@ h2{font-family:'Playfair Display',serif;font-size:42px;letter-spacing:4px;}
 </div>
 
 </body>
-</html>
+</html><div class="gallery">
+  <img src="IMG_1234.jpg" alt="Sculpture 01">
+  <img src="IMG_1235.jpg" alt="Sculpture 02">
+  <img src="IMG_1236.jpg" alt="Sculpture 03">
+</div>
