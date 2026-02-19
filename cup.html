@@ -8,37 +8,39 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
-body{ margin:0; background:#111; color:#eaeaea; font-family:'Inter',sans-serif; }
-
+body{
+  margin:0;
+  background:#111;
+  color:#eaeaea;
+  font-family:'Inter',sans-serif;
+}
 a { text-decoration:none; color:inherit; }
-
 .back-btn{
   position:fixed; top:30px; left:30px;
   font-size:14px; padding:8px 16px; border:1px solid #eaeaea;
   border-radius:8px; transition:.3s;
 }
-.back-btn:hover{ background:#eaeaea; color:#111; }
-
+.back-btn:hover{
+  background:#eaeaea; color:#111;
+}
 h1{
   font-family:'Playfair Display', serif;
   font-size:60px; text-align:center;
   margin-top:80px; letter-spacing:3px;
 }
-
 .subtitle{
   text-align:center;
-  font-size:16px; opacity:.75;
+  font-size:16px;
+  opacity:.75;
   margin-bottom:50px;
 }
-
-.shop-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
   gap:40px;
   padding:0 60px 80px;
 }
-
-.product{
+.product {
   background:#1a1a1a;
   border-radius:12px;
   overflow:hidden;
@@ -47,10 +49,8 @@ h1{
   transition:.3s ease;
 }
 .product:hover{ transform:scale(1.03); box-shadow:0 15px 40px rgba(212,175,55,0.6); }
-
 .product img{ width:100%; display:block; }
-
-.product-info{
+.product-info {
   padding:20px;
   font-family:'Inter',sans-serif;
   text-align:center;
@@ -59,53 +59,42 @@ h1{
   font-size:18px; letter-spacing:1px; font-weight:600;
   margin-bottom:8px;
 }
-
-/* LIGHTBOX */
 .lightbox-bg{
   position:fixed; top:0; left:0; width:100%; height:100%;
   background:rgba(0,0,0,0.95); display:none;
-  justify-content:center; align-items:center; z-index:9999;
+  justify-content:center; align-items:center;
+  z-index:9999;
 }
 .lightbox-bg img{
   max-width:90%; max-height:90%;
   border-radius:12px; box-shadow:0 12px 40px rgba(0,0,0,0.7);
 }
 .lightbox-bg .close{ position:absolute; top:30px; right:30px; font-size:24px; cursor:pointer; color:#eaeaea;}
-
 @media(max-width:768px){
   h1{font-size:48px;}
   .shop-grid{padding:0 20px 60px;}
 }
 </style>
 </head>
-
 <body>
 
-<a class="back-btn" href="collection.html">&larr; BACK</a>
+<a class="back-btn" href="/">← HOME</a>
 
 <h1>Cup Collection</h1>
 <div class="subtitle">Collectible Ceramic Cups • Premium Editions • Limited Stock</div>
 
 <div class="shop-grid">
-  <div class="product" onclick="openLightbox('cup1.jpg')">
-    <img src="cup1.jpg" alt="Cup 01">
-    <div class="product-info">
-      <div class="name">Cup Edition 01</div>
-    </div>
+  <div class="product" onclick="openLightbox('images/cup1.jpg')">
+    <img src="images/cup1.jpg" alt="Cup 01">
+    <div class="product-info"><div class="name">Cup Edition 01</div></div>
   </div>
-
-  <div class="product" onclick="openLightbox('cup2.jpg')">
-    <img src="cup2.jpg" alt="Cup 02">
-    <div class="product-info">
-      <div class="name">Cup Edition 02</div>
-    </div>
+  <div class="product" onclick="openLightbox('images/cup2.jpg')">
+    <img src="images/cup2.jpg" alt="Cup 02">
+    <div class="product-info"><div class="name">Cup Edition 02</div></div>
   </div>
-
-  <div class="product" onclick="openLightbox('cup3.jpg')">
-    <img src="cup3.jpg" alt="Cup 03">
-    <div class="product-info">
-      <div class="name">Cup Edition 03</div>
-    </div>
+  <div class="product" onclick="openLightbox('images/cup3.jpg')">
+    <img src="images/cup3.jpg" alt="Cup 03">
+    <div class="product-info"><div class="name">Cup Edition 03</div></div>
   </div>
 </div>
 
@@ -125,4 +114,4 @@ function closeLightbox(){
 </script>
 
 </body>
-    </html>
+</html>
