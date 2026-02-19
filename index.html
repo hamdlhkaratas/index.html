@@ -1,127 +1,122 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hamdullah Karataş</title>
+<title>WORK - Hamdullah Karataş</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
-
 body{
-margin:0;
-background:#0f0f0f;
-color:#eaeaea;
-font-family:'Inter',sans-serif;
-overflow-x:hidden;
+  margin:0;
+  background:#0f0f0f;
+  color:#eaeaea;
+  font-family:'Inter',sans-serif;
+  overflow-x:hidden;
+}
+
+a{
+  text-decoration:none;
+  color:#eaeaea;
 }
 
 nav{
-position:fixed;
-width:100%;
-padding:25px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:rgba(0,0,0,.6);
-backdrop-filter:blur(8px);
-box-sizing:border-box;
+  position:fixed;
+  width:100%;
+  padding:25px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(0,0,0,.6);
+  backdrop-filter:blur(8px);
+  box-sizing:border-box;
 }
 
 .logo{
-letter-spacing:2px;
-font-size:14px;
+  letter-spacing:2px;
+  font-size:14px;
 }
 
 .nav-links{
-display:flex;
-align-items:center;
+  display:flex;
+  align-items:center;
 }
 
 .nav-links a{
-color:#eaeaea;
-text-decoration:none;
-margin-left:30px;
-font-size:12px;
-letter-spacing:2px;
-transition:.3s;
+  color:#eaeaea;
+  text-decoration:none;
+  margin-left:30px;
+  font-size:12px;
+  letter-spacing:2px;
+  transition:.3s;
 }
 
 .nav-links a:hover{
-opacity:.6;
+  opacity:.6;
 }
 
 header{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:0 20px;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:0 20px;
 }
 
 h1{
-font-family:'Playfair Display',serif;
-font-size:54px;
-letter-spacing:4px;
-margin:0;
+  font-family:'Playfair Display',serif;
+  font-size:48px;
+  text-align:center;
+  margin-top:40px;
+  letter-spacing:3px;
 }
 
 .subtitle{
-margin-top:15px;
-font-size:13px;
-letter-spacing:3px;
-opacity:.6;
+  text-align:center;
+  margin-bottom:50px;
+  font-size:14px;
+  opacity:0.7;
+  letter-spacing:2px;
 }
 
-/* MOBILE FIX */
-
+/* MOBILE */
 @media(max-width:768px){
-
-nav{
-padding:20px 5%;
+  h1{font-size:36px;}
+  .subtitle{font-size:12px;}
 }
-
-.nav-links a{
-margin-left:15px;
-font-size:10px;
-letter-spacing:1px;
-}
-
-h1{
-font-size:34px;
-letter-spacing:2px;
-}
-
-.subtitle{
-font-size:10px;
-letter-spacing:2px;
-}
-
-}
-
 </style>
 </head>
-
 <body>
 
 <nav>
-<div class="logo">HK</div>
-
-<div class="nav-links">
-  <a href="collection.html">WORK</a>
-  <a href="mailto:hamdullahkaratas406@gmail.com">MAIL</a>
-  <a href="https://instagram.com/hamdlhkaratas" target="_blank">IG</a>
-  <!-- Limited Series linki ve yazısı tamamen kaldırıldı -->
-</div>
+  <div class="logo">HK</div>
+  <div class="nav-links">
+    <a href="collection.html">WORK</a>
+    <a href="mailto:hamdullahkaratas406@gmail.com">MAIL</a>
+    <a href="https://instagram.com/hamdlhkaratas" target="_blank">IG</a>
+    <!-- LIMITED Series linki ve yazısı KALDIRILDI -->
+  </div>
 </nav>
 
 <header>
-<h1>HAMDULLAH KARATAŞ</h1>
-<div class="subtitle">CERAMIC SCULPTURE • PORCELAIN • STONEWARE</div>
+  <h1>WORK</h1>
+  <div class="subtitle">Explore Sculptures & Cups Collections</div>
 </header>
+
+<!-- İçerik galerisi örnek -->
+<div class="gallery" style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px; padding:40px 20px;">
+  <a href="sculptures.html" style="width:300px; text-align:center;">
+    <img src="sculpture_preview.jpg" style="width:100%; border-radius:16px; box-shadow:0 8px 20px rgba(0,0,0,0.2); transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+    <p style="margin-top:10px; font-weight:600; font-family:'Inter',sans-serif;">Sculptures</p>
+  </a>
+  <a href="cup.html" style="width:300px; text-align:center;">
+    <img src="cup_preview.jpg" style="width:100%; border-radius:16px; box-shadow:0 8px 20px rgba(0,0,0,0.2); transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+    <p style="margin-top:10px; font-weight:600; font-family:'Inter',sans-serif;">Cups</p>
+  </a>
+</div>
 
 </body>
 </html>
