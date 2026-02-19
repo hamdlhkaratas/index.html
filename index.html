@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WORK - Hamdullah Karataş</title>
+<title>Hamdullah Karataş</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
@@ -14,11 +14,6 @@ body{
   color:#eaeaea;
   font-family:'Inter',sans-serif;
   overflow-x:hidden;
-}
-
-a{
-  text-decoration:none;
-  color:#eaeaea;
 }
 
 nav{
@@ -68,55 +63,63 @@ header{
 
 h1{
   font-family:'Playfair Display',serif;
-  font-size:48px;
-  text-align:center;
-  margin-top:40px;
-  letter-spacing:3px;
+  font-size:54px;
+  letter-spacing:4px;
+  margin:0;
 }
 
 .subtitle{
-  text-align:center;
-  margin-bottom:50px;
-  font-size:14px;
-  opacity:0.7;
+  margin-top:15px;
+  font-size:13px;
+  letter-spacing:3px;
+  opacity:.6;
+}
+
+/* MOBILE FIX */
+@media(max-width:768px){
+
+nav{
+  padding:20px 5%;
+}
+
+.nav-links a{
+  margin-left:15px;
+  font-size:10px;
+  letter-spacing:1px;
+}
+
+h1{
+  font-size:34px;
   letter-spacing:2px;
 }
 
-/* MOBILE */
-@media(max-width:768px){
-  h1{font-size:36px;}
-  .subtitle{font-size:12px;}
+.subtitle{
+  font-size:10px;
+  letter-spacing:2px;
 }
+
+}
+
 </style>
 </head>
+
 <body>
 
 <nav>
-  <div class="logo">HK</div>
-  <div class="nav-links">
-    <a href="collection.html">WORK</a>
-    <a href="mailto:hamdullahkaratas406@gmail.com">MAIL</a>
-    <a href="https://instagram.com/hamdlhkaratas" target="_blank">IG</a>
-    <!-- LIMITED Series linki ve yazısı KALDIRILDI -->
-  </div>
+<div class="logo">HK</div>
+
+<div class="nav-links">
+  <a href="collection.html">WORK</a>
+  <a href="mailto:hamdullahkaratas406@gmail.com">MAIL</a>
+  <a href="https://instagram.com/hamdlhkaratas" target="_blank">IG</a>
+  <!-- LIMITED SERIES linki TAMAMEN kaldırıldı -->
+</div>
 </nav>
 
 <header>
-  <h1>WORK</h1>
-  <div class="subtitle">Explore Sculptures & Cups Collections</div>
+<h1>HAMDULLAH KARATAŞ</h1>
+<div class="subtitle">CERAMIC SCULPTURE • PORCELAIN • STONEWARE</div>
 </header>
-
-<!-- İçerik galerisi örnek -->
-<div class="gallery" style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px; padding:40px 20px;">
-  <a href="sculptures.html" style="width:300px; text-align:center;">
-    <img src="sculpture_preview.jpg" style="width:100%; border-radius:16px; box-shadow:0 8px 20px rgba(0,0,0,0.2); transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-    <p style="margin-top:10px; font-weight:600; font-family:'Inter',sans-serif;">Sculptures</p>
-  </a>
-  <a href="cup.html" style="width:300px; text-align:center;">
-    <img src="cup_preview.jpg" style="width:100%; border-radius:16px; box-shadow:0 8px 20px rgba(0,0,0,0.2); transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-    <p style="margin-top:10px; font-weight:600; font-family:'Inter',sans-serif;">Cups</p>
-  </a>
-</div>
 
 </body>
 </html>
