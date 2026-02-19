@@ -8,11 +8,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300&display=swap" rel="stylesheet">
 
 <style>
-body { margin:0; background:#111; color:#eaeaea; font-family:'Inter',sans-serif; }
-a { color:#eaeaea; text-decoration:none; display:block; margin:15px 0; font-size:18px; letter-spacing:3px; transition:.3s; }
-a:hover { opacity:.6; }
-
-header {
+body{margin:0;background:#111;color:#eaeaea;font-family:'Inter',sans-serif;}
+header{
   height:100vh;
   display:flex;
   flex-direction:column;
@@ -20,38 +17,39 @@ header {
   align-items:center;
   text-align:center;
 }
-
-h2 {
+h2{
   font-family:'Playfair Display',serif;
   font-size:50px;
   letter-spacing:4px;
   margin-bottom:60px;
 }
-
-.back {
+a{
+  color:#eaeaea;
+  text-decoration:none;
+  letter-spacing:3px;
+  margin:15px 0;
+  display:block;
+  font-size:18px;
+  transition:.3s;
+}
+a:hover{opacity:.6;}
+.back{
   position:fixed;
   top:30px;
   left:8%;
   font-size:12px;
   opacity:.6;
 }
-
-@media(max-width:768px){
-  h2 { font-size:36px; }
-  a { font-size:16px; }
-}
 </style>
 </head>
 
 <body>
-
-<a href="index.html" class="back">← BACK</a>
+<a href="/" class="back">← BACK</a>
 
 <header>
   <h2>COLLECTION</h2>
   <a href="sculpture.html">SCULPTURES</a>
   <a href="cup.html">CUP COLLECTION</a>
 </header>
-
 </body>
 </html>
