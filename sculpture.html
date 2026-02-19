@@ -8,11 +8,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
-body { margin:0; background:#111; color:#fff; font-family:'Inter',sans-serif; overflow-x:hidden; }
+body {
+  margin:0;
+  background:#111;
+  color:#fff;
+  font-family:'Inter',sans-serif;
+  overflow-x:hidden;
+}
 a { text-decoration:none; color:inherit; }
-
 .back-btn {
-  position:fixed; top:30px; left:30px;
+  position:fixed;
+  top:30px;
+  left:30px;
   font-family:'Inter',sans-serif;
   font-size:14px;
   letter-spacing:2px;
@@ -21,26 +28,44 @@ a { text-decoration:none; color:inherit; }
   opacity:.8;
   transition:.3s;
 }
-.back-btn:hover { opacity:1; background:#fff; color:#111; }
-
+.back-btn:hover {
+  opacity:1;
+  background:#fff;
+  color:#111;
+}
 h1 {
-  font-family:'Playfair Display',serif;
+  font-family:'Playfair Display', serif;
   font-size:64px;
   text-align:center;
   margin-top:80px;
   letter-spacing:3px;
   font-weight:700;
 }
-
-.subtitle { text-align:center; font-size:16px; letter-spacing:2px; opacity:.7; margin-bottom:60px; }
-
-.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:50px; padding:0 60px 80px; }
-
-.card { position:relative; overflow:hidden; border-radius:12px; cursor:pointer; }
-
-.card img { width:100%; display:block; transition:transform .5s ease; }
+.subtitle {
+  text-align:center;
+  font-size:16px;
+  letter-spacing:2px;
+  opacity:.7;
+  margin-bottom:60px;
+}
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:50px;
+  padding:0 60px 80px;
+}
+.card {
+  position:relative;
+  overflow:hidden;
+  border-radius:12px;
+  cursor:pointer;
+}
+.card img {
+  width:100%;
+  display:block;
+  transition:transform .5s ease;
+}
 .card:hover img { transform:scale(1.07); }
-
 .card .info {
   position:absolute;
   bottom:0;
@@ -53,29 +78,33 @@ h1 {
   letter-spacing:1px;
   text-align:center;
 }
-
 .lightbox-bg {
-  position:fixed; top:0; left:0; width:100%; height:100%;
+  position:fixed;
+  top:0; left:0;
+  width:100%; height:100%;
   background: rgba(0,0,0,0.95);
   display:none;
   justify-content:center;
   align-items:center;
   z-index:9999;
 }
-
 .lightbox-bg img { max-width:90%; max-height:90%; }
-.lightbox-bg .close { position:absolute; top:30px; right:30px; font-size:22px; cursor:pointer; font-family:'Inter',sans-serif; }
-
+.lightbox-bg .close {
+  position:absolute;
+  top:30px; right:30px;
+  font-size:22px;
+  cursor:pointer;
+  font-family:'Inter',sans-serif;
+}
 @media(max-width:768px){
-  h1 { font-size:48px; }
-  .grid { padding:0 20px 60px; gap:30px; }
+  h1{font-size:48px;}
+  .grid{padding:0 20px 60px; gap:30px;}
 }
 </style>
 </head>
-
 <body>
 
-<a class="back-btn" href="collection.html">&larr; BACK</a>
+<a class="back-btn" href="/">← HOME</a>
 
 <h1>SCULPTURES</h1>
 <div class="subtitle">Handmade Special Works</div>
@@ -85,13 +114,13 @@ h1 {
     <img src="images/best2.jpg" alt="Sculpture 01">
     <div class="info">DEAD</div>
   </div>
-  <div class="card" onclick="openLightbox('images/mgf1.jpg')">
-    <img src="images/mgf2.jpg" alt="Sculpture 02">
+  <div class="card" onclick="openLightbox('images/mfg2.jpg')">
+    <img src="images/mfg1.jpg" alt="Sculpture 02">
     <div class="info">CROSSBREED</div>
   </div>
-  <div class="card" onclick="openLightbox('sculpture-03.jpg')">
-    <img src="sculpture-03.jpg" alt="Sculpture 03">
-    <div class="info">Sculpture 03</div>
+  <div class="card" onclick="openLightbox('images/sculpture3.jpg')">
+    <img src="images/sculpture3.jpg" alt="Sculpture 03">
+    <div class="info">SCULPTURE 03</div>
   </div>
 </div>
 
